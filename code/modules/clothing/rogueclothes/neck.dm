@@ -13,10 +13,12 @@
 	slot_flags = ITEM_SLOT_NECK|ITEM_SLOT_HEAD
 	blocksound = SOFTHIT
 	body_parts_covered = NECK|HAIR|EARS|HEAD
-	armor = list("blunt" = 33, "slash" = 12, "stab" = 22, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	armor = list("blunt" = 60, "slash" = 40, "stab" = 50, "bullet" = 25, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_CUT,BCLASS_BLUNT)
 	adjustable = CAN_CADJUST
 	toggle_icon_state = TRUE
 	sewrepair = TRUE
+	max_integrity = 100
 
 /obj/item/clothing/neck/roguetown/coif/AdjustClothes(mob/user)
 	if(loc == user)
@@ -46,7 +48,7 @@
 	icon_state = "chaincoif"
 	item_state = "chaincoif"
 	flags_inv = HIDEEARS|HIDEHAIR
-	armor = list("blunt" = 30, "slash" = 60, "stab" = 45, "bullet" = 10, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	armor = list("blunt" = 60, "slash" = 100, "stab" = 80, "bullet" = 20, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 
 	max_integrity = 200
 	resistance_flags = FIRE_PROOF
@@ -83,9 +85,9 @@
 
 /obj/item/clothing/neck/roguetown/chaincoif/iron
 	icon_state = "ichaincoif"
-
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/iron
+	max_integrity = 150
 
 /obj/item/clothing/neck/roguetown/bervor
 	name = "bervor"
