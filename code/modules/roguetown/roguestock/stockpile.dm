@@ -7,7 +7,7 @@
 	withdraw_price = 5
 	transport_fee = 3
 	export_price = 5
-	importexport_amt = 10
+	importexport_amt = 20
 
 /datum/roguestock/stockpile/stone
 	name = "Stone"
@@ -62,7 +62,7 @@
 	withdraw_price = 5
 	transport_fee = 2
 	export_price = 5
-	importexport_amt = 10
+	importexport_amt = 20
 
 /datum/roguestock/stockpile/fibers
 	name = "Fibers"
@@ -73,7 +73,7 @@
 	withdraw_price = 3
 	transport_fee = 1
 	export_price = 3
-	importexport_amt = 10
+	importexport_amt = 20
 
 /datum/roguestock/stockpile/hide
 	name = "Hide"
@@ -84,7 +84,7 @@
 	withdraw_price = 15
 	transport_fee = 3
 	export_price = 15
-	importexport_amt = 5
+	importexport_amt = 10
 
 /datum/roguestock/stockpile/fur
 	name = "Fur"
@@ -106,7 +106,7 @@
 	withdraw_price = 5
 	transport_fee = 2
 	export_price = 5
-	importexport_amt = 5
+	importexport_amt = 10
 
 /datum/roguestock/stockpile/grain
 	name = "Grain"
@@ -117,7 +117,7 @@
 	withdraw_price = 3
 	transport_fee = 1
 	export_price = 3
-	importexport_amt = 10
+	importexport_amt = 20
 
 /datum/roguestock/stockpile/apple
 	name = "Apple"
@@ -128,7 +128,7 @@
 	withdraw_price = 5
 	transport_fee = 1
 	export_price = 5
-	importexport_amt = 5
+	importexport_amt = 20
 
 /datum/roguestock/stockpile/meat
 	name = "Meat"
@@ -139,7 +139,7 @@
 	withdraw_price = 8
 	transport_fee = 2
 	export_price = 8
-	importexport_amt = 5
+	importexport_amt = 10
 
 /datum/roguestock/stockpile/poultry
 	name = "Bird Meat"
@@ -150,7 +150,7 @@
 	withdraw_price = 8
 	transport_fee = 2
 	export_price = 8
-	importexport_amt = 5
+	importexport_amt = 10
 
 /datum/roguestock/stockpile/poultry
 	name = "Egg"
@@ -161,7 +161,7 @@
 	withdraw_price = 5
 	transport_fee = 2
 	export_price = 5
-	importexport_amt = 5
+	importexport_amt = 10
 
 /datum/roguestock/stockpile/butter
 	name = "Butter"
@@ -172,7 +172,7 @@
 	withdraw_price = 13
 	transport_fee = 3
 	export_price = 13
-	importexport_amt = 5
+	importexport_amt = 10
 
 /datum/roguestock/stockpile/cheese
 	name = "Cheese"
@@ -183,4 +183,4 @@
 	withdraw_price = 5
 	transport_fee = 3
 	export_price = 5
-	importexport_amt = 5
+	importexport_amt = 10
