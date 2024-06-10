@@ -381,6 +381,8 @@
 					var/thiefskill = src.mind.get_skill_level(/datum/skill/misc/stealing)
 					var/stealroll = roll("[thiefskill]d6")
 					var/targetperception = (V.STAPER)
+					if(V.cmode)
+						targetperception += 5
 					var/list/stealablezones = list("chest", "neck", "groin", "r_hand", "l_hand")
 					var/list/stealpos = list()
 					var/exp_to_gain = STAINT
