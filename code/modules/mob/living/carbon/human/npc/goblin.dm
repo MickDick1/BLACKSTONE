@@ -360,8 +360,8 @@
 		D.gob_portal_spawn()
 	for(var/mob/living/carbon/spirit/D in GLOB.player_list)
 		D.gob_portal_spawn()
-		
-/mob/proc/gob_portal_spawn(mob/dead/observer/user)
+
+/mob/proc/gob_portal_spawn()
 	SEND_SOUND(src, sound('sound/misc/notice (2).ogg'))
 	if(alert(src, "A Goblin Portal is summoning you from the Underworld.", "Be Green?", "Yes", "No") == "Yes")
 		var/list/possible_targets = list()
@@ -371,7 +371,8 @@
 				possible_targets += GP.loc
 			var/spawnloc = pick(possible_targets)
 			var/mob/living/carbon/human/species/goblin/npc/N = new (get_turf(spawnloc))
-			N.key = user.key
+			N.key = usr.key
+			qdel(usr)
 
 /obj/structure/gob_portal/attack_ghost(mob/dead/observer/user)
 	if(QDELETED(user))
