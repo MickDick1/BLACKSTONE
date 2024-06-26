@@ -356,6 +356,22 @@
 	soundloop = new(list(src), FALSE)
 	soundloop.start()
 	spawn_gob()
+	for(var/mob/dead/observer/D in GLOB.player_list)
+		D.gob_portal_spawn()
+	for(var/mob/living/carbon/spirit/D in GLOB.player_list)
+		D.gob_portal_spawn()
+		
+/mob/proc/gob_portal_spawn(mob/dead/observer/user)
+	SEND_SOUND(src, sound('sound/misc/notice (2).ogg'))
+	if(alert(src, "A Goblin Portal is summoning you from the Underworld.", "Be Green?", "Yes", "No") == "Yes")
+		var/list/possible_targets = list()
+		for(var/obj/structure/gob_portal/GP)
+			if(isturf(GP.loc))
+				testing("foundgobportal")
+				possible_targets += GP.loc
+			var/spawnloc = pick(possible_targets)
+			var/mob/living/carbon/human/species/goblin/npc/N = new (get_turf(spawnloc))
+			N.key = user.key
 
 /obj/structure/gob_portal/attack_ghost(mob/dead/observer/user)
 	if(QDELETED(user))
